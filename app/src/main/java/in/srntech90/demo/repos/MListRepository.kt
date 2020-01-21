@@ -33,7 +33,7 @@ class MListRepository {
                 }
 
                 override fun onResponse(call: Call<MovieList>, response: Response<MovieList>) {
-
+                    Timber.i("onResponse: response.body() > ${response.body()}")
                     data.value = Outcome.loading(false)
                     if (response.isSuccessful && response.body() != null)
                         data.value = Outcome.success(response.body()!!)
