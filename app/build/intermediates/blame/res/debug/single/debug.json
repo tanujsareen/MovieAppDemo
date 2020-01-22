@@ -1364,6 +1364,10 @@
         "source": "C:\\Users\\Tanuj.sareen\\.gradle\\caches\\transforms-2\\files-2.1\\93bc303e0edf41378a70a682ebb74605\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_detail_fragment.xml.flat",
+        "source": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\src\\main\\res\\layout\\detail_fragment.xml"
+    },
+    {
         "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\Tanuj.sareen\\.gradle\\caches\\transforms-2\\files-2.1\\df2ac4fe6b88cbdd1c862077d2fdf1ec\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
@@ -1834,6 +1838,10 @@
     {
         "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Tanuj.sareen\\.gradle\\caches\\transforms-2\\files-2.1\\93bc303e0edf41378a70a682ebb74605\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_black_50dp.xml.flat",
+        "source": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\src\\main\\res\\drawable\\ic_image_black_50dp.xml"
     },
     {
         "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",

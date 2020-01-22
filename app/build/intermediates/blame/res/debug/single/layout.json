@@ -8,6 +8,10 @@
         "source": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\src\\main\\res\\layout\\main_activity.xml"
     },
     {
+        "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\detail_fragment.xml",
+        "source": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\src\\main\\res\\layout\\detail_fragment.xml"
+    },
+    {
         "merged": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_fragment.xml",
         "source": "C:\\tanuj\\Android\\DemoAshvaray\\DemoApp\\app\\src\\main\\res\\layout\\main_fragment.xml"
     }

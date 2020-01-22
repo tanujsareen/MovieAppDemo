@@ -14,8 +14,8 @@ public class MainFragmentBindingImpl extends MainFragmentBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.recycleView, 1);
-        sViewsWithIds.put(R.id.progressBar, 2);
+        sViewsWithIds.put(R.id.progressBar, 1);
+        sViewsWithIds.put(R.id.recycleView, 2);
     }
     // views
     // variables
@@ -28,9 +28,9 @@ public class MainFragmentBindingImpl extends MainFragmentBinding  {
     }
     private MainFragmentBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
-            , (android.widget.ProgressBar) bindings[2]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
+            , (android.widget.RelativeLayout) bindings[0]
+            , (android.widget.ProgressBar) bindings[1]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
             );
         this.main.setTag(null);
         setRootTag(root);

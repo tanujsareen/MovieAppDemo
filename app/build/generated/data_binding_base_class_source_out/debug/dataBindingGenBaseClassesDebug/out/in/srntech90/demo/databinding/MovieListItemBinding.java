@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import in.srntech90.demo.R;
@@ -16,14 +17,18 @@ import java.lang.Object;
 
 public abstract class MovieListItemBinding extends ViewDataBinding {
   @NonNull
+  public final CardView cardView;
+
+  @NonNull
   public final ImageView imgMovie;
 
   @NonNull
   public final TextView txtMovieName;
 
   protected MovieListItemBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView imgMovie, TextView txtMovieName) {
+      CardView cardView, ImageView imgMovie, TextView txtMovieName) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.cardView = cardView;
     this.imgMovie = imgMovie;
     this.txtMovieName = txtMovieName;
   }

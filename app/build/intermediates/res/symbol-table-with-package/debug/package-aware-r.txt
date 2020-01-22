@@ -615,6 +615,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1044,6 +1045,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_close_black_24dp
+drawable ic_image_black_50dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1129,6 +1131,7 @@ id add
 id alertTitle
 id all
 id always
+id appBarLayout
 id app_bar_search
 id async
 id auto
@@ -1137,6 +1140,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id cardView
 id center
 id center_horizontal
 id center_vertical
@@ -1147,6 +1151,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collapsingToolbarLayout
 id container
 id content
 id contentPanel
@@ -1189,6 +1194,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imgDetail
 id imgMovie
 id info
 id invisible
@@ -1233,6 +1239,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recycleView
+id relUpperLayout
 id right
 id right_icon
 id right_side
@@ -1311,6 +1318,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtMovieName
+id txtYears
 id unchecked
 id uniform
 id unlabeled
@@ -1390,6 +1398,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout detail_fragment
 layout main_activity
 layout main_fragment
 layout movie_list_item

@@ -14,8 +14,9 @@ public class MovieListItemBindingImpl extends MovieListItemBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.txtMovieName, 1);
-        sViewsWithIds.put(R.id.imgMovie, 2);
+        sViewsWithIds.put(R.id.cardView, 1);
+        sViewsWithIds.put(R.id.txtMovieName, 2);
+        sViewsWithIds.put(R.id.imgMovie, 3);
     }
     // views
     @NonNull
@@ -26,12 +27,13 @@ public class MovieListItemBindingImpl extends MovieListItemBinding  {
     // Inverse Binding Event Handlers
 
     public MovieListItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private MovieListItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[2]
-            , (android.widget.TextView) bindings[1]
+            , (androidx.cardview.widget.CardView) bindings[1]
+            , (android.widget.ImageView) bindings[3]
+            , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="start_semi">#9AFFFFFF</color>
+    <color name="background">#EBE8E8</color>
 </resources>

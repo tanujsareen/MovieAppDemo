@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import in.srntech90.demo.databinding.DetailFragmentBindingImpl;
 import in.srntech90.demo.databinding.MainActivityBindingImpl;
 import in.srntech90.demo.databinding.MainFragmentBindingImpl;
 import in.srntech90.demo.databinding.MovieListItemBindingImpl;
@@ -20,15 +21,18 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_MAINACTIVITY = 1;
+  private static final int LAYOUT_DETAILFRAGMENT = 1;
 
-  private static final int LAYOUT_MAINFRAGMENT = 2;
+  private static final int LAYOUT_MAINACTIVITY = 2;
 
-  private static final int LAYOUT_MOVIELISTITEM = 3;
+  private static final int LAYOUT_MAINFRAGMENT = 3;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
+  private static final int LAYOUT_MOVIELISTITEM = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(in.srntech90.demo.R.layout.detail_fragment, LAYOUT_DETAILFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(in.srntech90.demo.R.layout.main_activity, LAYOUT_MAINACTIVITY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(in.srntech90.demo.R.layout.main_fragment, LAYOUT_MAINFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(in.srntech90.demo.R.layout.movie_list_item, LAYOUT_MOVIELISTITEM);
@@ -43,6 +47,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_DETAILFRAGMENT: {
+          if ("layout/detail_fragment_0".equals(tag)) {
+            return new DetailFragmentBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for detail_fragment is invalid. Received: " + tag);
+        }
         case  LAYOUT_MAINACTIVITY: {
           if ("layout/main_activity_0".equals(tag)) {
             return new MainActivityBindingImpl(component, view);
@@ -114,9 +124,10 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
+      sKeys.put("layout/detail_fragment_0", in.srntech90.demo.R.layout.detail_fragment);
       sKeys.put("layout/main_activity_0", in.srntech90.demo.R.layout.main_activity);
       sKeys.put("layout/main_fragment_0", in.srntech90.demo.R.layout.main_fragment);
       sKeys.put("layout/movie_list_item_0", in.srntech90.demo.R.layout.movie_list_item);

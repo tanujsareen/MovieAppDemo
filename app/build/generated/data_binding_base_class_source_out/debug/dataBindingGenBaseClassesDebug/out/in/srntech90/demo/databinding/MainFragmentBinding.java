@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,7 +17,7 @@ import java.lang.Object;
 
 public abstract class MainFragmentBinding extends ViewDataBinding {
   @NonNull
-  public final ConstraintLayout main;
+  public final RelativeLayout main;
 
   @NonNull
   public final ProgressBar progressBar;
@@ -26,7 +26,7 @@ public abstract class MainFragmentBinding extends ViewDataBinding {
   public final RecyclerView recycleView;
 
   protected MainFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ConstraintLayout main, ProgressBar progressBar, RecyclerView recycleView) {
+      RelativeLayout main, ProgressBar progressBar, RecyclerView recycleView) {
     super(_bindingComponent, _root, _localFieldCount);
     this.main = main;
     this.progressBar = progressBar;
