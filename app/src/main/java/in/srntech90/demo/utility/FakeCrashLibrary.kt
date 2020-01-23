@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Wizie Technologies. All rights reserved.
+ *
  * Created By : Tanuj Sareen on 17 - 10 - 2019
  */
 package `in`.wizie.mobileapp.utility
